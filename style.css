@@ -37,7 +37,7 @@ body {
 
 /* Header styles */
 header {	
-	margin: 20px 0 20px 0;
+	margin: 0 0 20px 0;
 }
 
 .header-title {
@@ -108,6 +108,9 @@ header {
 .fa.fa-linkedin-square {
 	font-size: 1.10em;
 }
+
+.footer i {
+	margin: 0 0 0 20px;
 
 /* Media Queries */
 
