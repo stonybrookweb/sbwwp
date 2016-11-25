@@ -13,13 +13,8 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
+				// the_content();
+		
 			endwhile; // End of the loop.
 			?>
 
@@ -51,27 +46,30 @@ get_header(); ?>
 	
 	// Loop through array
 	
-//	echo "<pre>";
-//	echo print_r($myposts);
-// echo "</pre>";
+	//echo "<pre>";
+	//echo print_r($myposts);
+ 	//echo "</pre>";
 	
 	$output .= '<div class="row">'; // TODO: wrap this in an if statement for every 3rd
 	foreach ( $myposts as $post):
 		setup_postdata( $post );
 		
+		$myurl = get_permalink($post -> ID);
 		$mytitle = ($post -> post_title);
 		$mydescription = $post -> post_excerpt;
 	
 		$output .= '<article>';
 		$output .= '<div class="col-md-4 col-xs-12">';
 		
+		$output .= '<a href="' . $myurl . '">';
 		$attr = array(
 			'class' => 'img-responsive featured-work-image'
 		);
 		$output .= get_the_post_thumbnail( $post -> ID, 'full', $attr);
+		$output .= '</a>';
 		
 		$output .= '<div class="featured-work-text-area">';
-		$output .= '<h3 class="text-center">' . $mytitle . '</h3>';
+		$output .= '<h3 class="text-center"><a href="' . $myurl . '">' . $mytitle . '</a>' . '</h3>';
 		$output .= '<p class="featured-work-description">' . $mydescription . '</p>';
 		$output .= '</div>'; 
  		
@@ -79,7 +77,14 @@ get_header(); ?>
 		$output .= '</article>';
 
 	endforeach;
-	
+	?>
+	<div class="row">
+        <div class="col-xs-12">
+            <h2 class="featured-work-title">Featured Work</h2>
+        </div>
+    </div>
+      
+	<?php 
 	$output .= '</div>'; // TODO: wrap this in an if statement for every 3rd
 	echo $output;
 ?>
