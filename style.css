@@ -1,0 +1,136 @@
+/*
+Theme Name: Stony Brook Web
+Theme URI: http://underscores.me/
+Author: Alana Martin
+Author URI: http://underscores.me/
+Description: Biz theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sbwwp
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Stony Brook Web is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+--------------------------------------------------------------*/
+
+
+/* General styles */
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	margin: 0 auto;
+	color: #2d3c49;
+}
+
+/* Header styles */
+header {	
+	margin: 20px 0 20px 0;
+}
+
+.header-title {
+	font-size: 60px;
+	font-weight: 100;
+	letter-spacing: 0.1em;
+	line-height: 115%;
+}
+
+.header-tagline {
+	font-size: 20px;
+}
+
+.header-logo {
+	font-size: 40px;
+}
+
+.header-bottom-rule {
+	border: 3px solid #7d97ad;
+	border-radius: 3px;
+	margin: 0 0 20px 0;
+}
+
+/* Featured work styles */
+
+.featured-work-title {
+	color: #7d97ad;
+	letter-spacing: 0.1em;
+}
+
+.featured-work-image {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+.featured-work-text-area .btn {
+	display: block;
+	width: 50%;
+	margin: 20px auto 40px auto;
+}
+
+/* Footer styles */
+
+.fa.fa-linkedin-square {
+	font-size: 1.10em;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 992px) {
+	.featured-work-description {
+		min-height: 100px;
+	}
+}
+
+ @media screen and (min-width: 768px) and (max-width: 992px) {
+	.featured-work-image {
+		float: left;
+		width: 45%;
+		margin-right: 5%;
+		margin-bottom: 40px;
+	}
+	.featured-work-text-area {
+		float: left;
+		width: 45%;
+	}
+	
+	.featured-work-text-area h3 {
+	text-align: left;
+	}
+	
+	.featured-work-text-area .btn {
+		margin: 20px 0 40px 0;
+	}
+}
+ 
+ @media screen and (max-width: 767px) {
+
+	.featured-work-title {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	.featured-work-image {
+		margin: 0 auto;
+	}
+	
+	.featured-work-text-area {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+	
+	.fa.fa-linkedin-square {
+	font-size: 1.50em;
+}
+}
