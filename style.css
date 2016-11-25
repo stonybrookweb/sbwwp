@@ -47,6 +47,11 @@ header {
 	line-height: 115%;
 }
 
+.header-title a {
+	color: rgb(45, 60, 73);
+	text-decoration: none;
+}
+
 .header-tagline {
 	font-size: 20px;
 }
@@ -60,6 +65,23 @@ header {
 	border-radius: 3px;
 	margin: 0 0 20px 0;
 }
+
+/* Menu */
+
+
+.current-menu-item a {
+    border-color: #eee #eee #ddd;
+	background-color: #eee;
+}
+
+.nav-tabs {
+	border-bottom: none;
+}
+
+.nav-tabs > li > a {
+	border-radius: 4px;
+}
+
 
 /* Featured work styles */
 

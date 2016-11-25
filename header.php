@@ -21,29 +21,64 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sbwwp' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sbwwp' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+<div class="container">
+		<nav id="site-navigation" class="main-navigation" role="navigation">        
+            <?php $nav_args = array(
+            		'theme_location' => 'primary', 
+					'menu_id' 		 => 'primary-menu',	
+					'menu_class'     => 'nav nav-tabs'	
+            ); ?>
+			<?php wp_nav_menu( $nav_args  ); ?>
 		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+</div>
+
+<div class="container">
+    <header>
+        <div class="row">
+            <div class="col-xs-3 header-logo">
+                <!-- Logo created at http://www5.flamingtext.com/ -->
+                <!-- <img src="img/logo.png" alt="Logo"/> -->
+            </div>
+        
+            <div class="col-xs-9">
+                <?php
+                if ( is_front_page() && is_home() ) : ?>
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                <h1 class="header-title text-right text-uppercase"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                <?php else : ?>
+                <h1 class="header-title text-right text-uppercase"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                <?php endif; ?>
+                
+                <?php
+                $description = get_bloginfo( 'description', 'display' );
+                if ( $description || is_customize_preview() ) : ?>
+                <p class="header-tagline text-right text-uppercase"><?php echo $description; /* WPCS: xss ok. */ ?></p>`
+                <?php endif; ?>  
+            </div>
+        </div>
+    
+    
+        <div class="row">
+            <div class="col-xs-12">
+            <hr class="header-bottom-rule">
+			</div>
+		</div>
+        
+        <div class="row">
+            <div class="col-xs-12">
+           
+                <picture>
+                <!-- Image via Flick Creative Commons https://www.flickr.com/photos/128629824@N06/26937348141/in/faves-140331223@N05/ -->
+                <!-- Image provided by http://tvorbaweb-stranok.sk/kontakt/ -->
+                <img class="img-responsive" src=" <?php header_image(); ?>" alt="A picture of HTML code"/> 
+                </picture>
+            </div>
+        </div>
+  </header>
+    
+    
+    
+    
+    
 
 	<div id="content" class="">

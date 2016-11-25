@@ -102,6 +102,10 @@ add_action( 'widgets_init', 'sbwwp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function sbwwp_scripts() {
+	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/d285c704ef.js', array(), '20151215', true );
+	
+	wp_enqueue_style( 'Lato-google-font', 'https://fonts.googleapis.com/css?family=Lato:100,300,300italic', array());
+	
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7');
 
 	wp_enqueue_style( 'sbwwp-style', get_stylesheet_uri(), array(), '1.2');
