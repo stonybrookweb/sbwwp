@@ -66,8 +66,7 @@ header {
 	margin: 0 0 20px 0;
 }
 
-/* Menu */
-
+/* Nav Menu */
 
 .current-menu-item a {
     border-color: #eee #eee #ddd;
@@ -82,6 +81,9 @@ header {
 	border-radius: 4px;
 }
 
+.nav a {
+	color: rgb(45, 60, 73);	
+}
 
 /* Featured work styles */
 

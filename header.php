@@ -70,7 +70,7 @@
                 <picture>
                 <!-- Image via Flick Creative Commons https://www.flickr.com/photos/128629824@N06/26937348141/in/faves-140331223@N05/ -->
                 <!-- Image provided by http://tvorbaweb-stranok.sk/kontakt/ -->
-                <img class="img-responsive" src=" <?php header_image(); ?>" alt="A picture of HTML code"/> 
+                <img class="img-responsive" src=" <?php echo get_template_directory_uri() . '/images/header.jpg' ?>" alt="A picture of HTML code"/> 
                 </picture>
             </div>
         </div>
