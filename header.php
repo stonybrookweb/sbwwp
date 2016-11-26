@@ -52,7 +52,7 @@
                 <?php
                 $description = get_bloginfo( 'description', 'display' );
                 if ( $description || is_customize_preview() ) : ?>
-                <p class="header-tagline text-right text-uppercase"><?php echo $description; /* WPCS: xss ok. */ ?></p>`
+                <p class="header-tagline text-right text-uppercase"><?php echo $description; /* WPCS: xss ok. */ ?></p>
                 <?php endif; ?>  
             </div>
         </div>

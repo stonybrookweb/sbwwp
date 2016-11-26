@@ -83,6 +83,7 @@ header {
 
 .nav a {
 	color: rgb(45, 60, 73);	
+	transition: background-color 0.3s ease;
 }
 
 /* Featured work styles */
@@ -109,13 +110,29 @@ header {
 	font-size: 1.10em;
 }
 
-.footer i {
+.fa-github,
+.fa-linkedin-square,
+.fa-facebook {
 	margin: 0 0 0 20px;
+}
+
+footer hr {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.footer a {
+	color: rgb(45, 60, 73);
+}
+
+.footer a:hover {
+    color:gray;
 }
 
 /* index.php styles or post */
 .post,
-.page {
+.page,
+.project {
     padding: 0 0 0 15px;
 }
 
