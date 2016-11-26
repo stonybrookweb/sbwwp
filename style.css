@@ -104,10 +104,20 @@ header {
 	margin: 20px auto 40px auto;
 }
 
+.featured-work-text-area a {
+	color: rgb(45, 60, 73);
+}
+
 /* Footer styles */
 
-.fa.fa-linkedin-square {
+.fa.fa-github,
+.fa.fa-linkedin-square,
+.fa.fa-facebook {
 	font-size: 1.10em;
+}
+
+.fa.fa-copyright{
+		font-size: 1.0em;	
 }
 
 .fa-github,
@@ -130,10 +140,16 @@ footer hr {
 }
 
 /* index.php styles or post */
-.post,
-.page,
-.project {
-    padding: 0 0 0 15px;
+.entry-header {
+    margin: 0 0 0 15px;
+}
+
+.entry-content {
+    margin: 0 0 0 15px;
+}
+
+.entry-footer {
+    margin: 0 0 0 15px;
 }
 
 .page-title {
@@ -150,6 +166,14 @@ footer hr {
 }
 
  @media screen and (min-width: 768px) and (max-width: 992px) {
+	.header-title {
+		font-size: 40px;
+	}
+	
+	.header-tagline{
+		font-size: 16px;	
+	}
+	 
 	.featured-work-image {
 		float: left;
 		width: 45%;
@@ -171,6 +195,13 @@ footer hr {
 }
  
  @media screen and (max-width: 767px) {
+	.header-title {
+		font-size: 25px;
+	}
+	
+	.header-tagline{
+		font-size: 16px;	
+	}
 
 	.featured-work-title {
 		text-align: center;
@@ -186,7 +217,13 @@ footer hr {
 		margin: 0 auto;
 	}
 	
-	.fa.fa-linkedin-square {
-	font-size: 1.50em;
-}
+	.fa.fa-github,
+	.fa.fa-linkedin-square,
+	.fa.fa-facebook {
+		font-size: 1.50em;
+	}
+	
+	.fa.fa-copyright{
+		font-size: 1.0em;	
+	}
 }

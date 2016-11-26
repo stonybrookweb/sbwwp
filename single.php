@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div class="container">
-		<main class="row" role="main">
+		<div class="row" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();
