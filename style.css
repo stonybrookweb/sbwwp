@@ -111,6 +111,18 @@ header {
 
 .footer i {
 	margin: 0 0 0 20px;
+}
+
+/* index.php styles or post */
+.post,
+.page {
+    padding: 0 0 0 15px;
+}
+
+.page-title {
+	padding: 0 0 0 15px;	
+}
+
 
 /* Media Queries */
 

@@ -148,7 +148,7 @@ require get_template_directory() . '/inc/jetpack.php';
 // Set Custom header image size
 $args = array(
 	'width'         => 1200,
-	'height'        => 400,
+	'height'        => 200,
 	'default-image' => get_template_directory_uri() . '/images/header.jpg',
 );
 add_theme_support( 'custom-header', $args );
