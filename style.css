@@ -141,35 +141,80 @@ footer hr {
 
 /* index.php styles or post */
 .entry-header {
-    margin: 0 0 0 15px;
+    padding: 0 15px;
 }
 
 .entry-content {
-    margin: 0 0 0 15px;
+    padding: 0 15px;
 }
 
 .entry-footer {
-    margin: 0 0 0 15px;
+    padding: 0 15px;
 }
 
 .entry-summary {
-    margin: 0 0 0 15px;
+    padding: 0 15px;
 }
 
 .error-404 {
-    margin: 0 0 0 15px;
+    padding: 0 15px;
 }
 
 .page-title {
 	padding: 0 0 0 15px;	
 }
 
+/* gallery */
+
+.gallery img {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/*images*/
+
+.headshot {
+    border-radius: 40px;
+}
+
+/* Contact */
+
+.wpcf7 input,
+.wpcf7 textarea {
+	max-width: 100%;
+}
 
 /* Media Queries */
 
 @media screen and (min-width: 992px) {
 	.featured-work-description {
 		min-height: 100px;
+	}
+	
+	.entry-header {
+		margin: 0 auto;
+		width: 60%;
+	}
+	
+	.entry-content {
+		margin: 0 auto;
+		width: 60%;
+	}
+	
+	.entry-footer {
+		margin: 0 auto;
+		width: 60%;
+	}
+	
+	.entry-summary {
+		margin: 0 auto;
+		width: 60%;
+	}
+	
+	.error-404 {
+		margin: 0 auto;
+		width: 60%;
 	}
 }
 
