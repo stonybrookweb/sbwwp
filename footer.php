@@ -21,6 +21,7 @@
         <p>
         <?php bloginfo( 'name' ); ?> <i class="fa fa-copyright" aria-hidden="true"></i>
         <a href="https://www.linkedin.com/in/alana-martin-84561233" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/stonybrookweb" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <a href="https://www.facebook.com/stonybrookweb" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="https://github.com/stonybrookweb" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
         </p>

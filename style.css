@@ -110,20 +110,16 @@ header {
 
 /* Footer styles */
 
-.fa.fa-github,
-.fa.fa-linkedin-square,
-.fa.fa-facebook {
-	font-size: 1.10em;
-}
-
 .fa.fa-copyright{
 		font-size: 1.0em;	
 }
 
 .fa-github,
 .fa-linkedin-square,
-.fa-facebook {
+.fa-facebook,
+.fa.fa-twitter {
 	margin: 0 0 0 20px;
+	font-size: 1.10em;
 }
 
 footer hr {
@@ -272,7 +268,8 @@ footer hr {
 	
 	.fa.fa-github,
 	.fa.fa-linkedin-square,
-	.fa.fa-facebook {
+	.fa.fa-facebook,
+	.fa.fa-twitter  {
 		font-size: 1.50em;
 	}
 	
