@@ -36,7 +36,7 @@ body {
 }
 
 /* Header styles */
-header {	
+header {
 	margin: 0 0 20px 0;
 }
 
@@ -82,7 +82,7 @@ header {
 }
 
 .nav a {
-	color: rgb(45, 60, 73);	
+	color: rgb(45, 60, 73);
 	transition: background-color 0.3s ease;
 }
 
@@ -111,7 +111,7 @@ header {
 /* Footer styles */
 
 .fa.fa-copyright{
-		font-size: 1.0em;	
+		font-size: 1.0em;
 }
 
 .fa-github,
@@ -157,7 +157,7 @@ footer hr {
 }
 
 .page-title {
-	padding: 0 0 0 15px;	
+	padding: 0 0 0 15px;
 }
 
 /* gallery */
@@ -174,6 +174,16 @@ footer hr {
     border-radius: 40px;
 }
 
+.alignleft {
+    float: left;
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+.alignright {
+    float: right;
+    margin: 0.5em 1em 0.5em 1em;
+}
+
 /* Contact */
 
 .wpcf7 input,
@@ -187,27 +197,27 @@ footer hr {
 	.featured-work-description {
 		min-height: 100px;
 	}
-	
+
 	.entry-header {
 		margin: 0 auto;
 		width: 60%;
 	}
-	
+
 	.entry-content {
 		margin: 0 auto;
 		width: 60%;
 	}
-	
+
 	.entry-footer {
 		margin: 0 auto;
 		width: 60%;
 	}
-	
+
 	.entry-summary {
 		margin: 0 auto;
 		width: 60%;
 	}
-	
+
 	.error-404 {
 		margin: 0 auto;
 		width: 60%;
@@ -218,11 +228,11 @@ footer hr {
 	.header-title {
 		font-size: 40px;
 	}
-	
+
 	.header-tagline{
-		font-size: 16px;	
+		font-size: 16px;
 	}
-	 
+
 	.featured-work-image {
 		float: left;
 		width: 45%;
@@ -233,47 +243,47 @@ footer hr {
 		float: left;
 		width: 45%;
 	}
-	
+
 	.featured-work-text-area h3 {
 	text-align: left;
 	}
-	
+
 	.featured-work-text-area .btn {
 		margin: 20px 0 40px 0;
 	}
 }
- 
+
  @media screen and (max-width: 767px) {
 	.header-title {
 		font-size: 25px;
 	}
-	
+
 	.header-tagline{
-		font-size: 16px;	
+		font-size: 16px;
 	}
 
 	.featured-work-title {
 		text-align: center;
 		margin-bottom: 20px;
 	}
-	
+
 	.featured-work-image {
 		margin: 0 auto;
 	}
-	
+
 	.featured-work-text-area {
 		max-width: 400px;
 		margin: 0 auto;
 	}
-	
+
 	.fa.fa-github,
 	.fa.fa-linkedin-square,
 	.fa.fa-facebook,
 	.fa.fa-twitter  {
 		font-size: 1.50em;
 	}
-	
+
 	.fa.fa-copyright{
-		font-size: 1.0em;	
+		font-size: 1.0em;
 	}
 }
